@@ -1,77 +1,64 @@
-# CNLSY Variable Map (NLS Investigator Review)
+# CNLSY Variable Map (Authoritative Mapping Pending)
 
-> **Status:** Pending completion because the NLS Investigator/codebook site is currently inaccessible from this environment (HTTP 403). No variable names are guessed below. Once access is restored, replace the placeholders with **exact** file names and **exact** variable names from the codebooks.
+## Status
+Pending completion. Use this file to record exact source files, exact variable names, wave coverage, and universe restrictions.
 
-## Children & Young Adult Files
+No guessed names should be added.
 
-### Sample identifiers / weights
-- **Source file:** _TBD after codebook review_
-- **Variables (exact names):** _TBD_
-- **Notes:** Identify child ID, mother ID, sampling weights (child assessment and/or panel weights), and universe flags.
+## Children and Young Adult Files
+
+### Sample identifiers and weights
+- Source file: `TBD`
+- Variables: `TBD`
+- Notes: child ID, mother ID, interview timing, assessment/YA weights, universe flags.
 
 ### Child demographics
-- **Source file:** _TBD after codebook review_
-- **Variables (exact names):** _TBD_
-- **Notes:** Sex, race/ethnicity, birth year/month.
+- Source file: `TBD`
+- Variables: `TBD`
+- Notes: sex, race/ethnicity, birth year/month.
 
 ### Anthropometrics (height/weight)
-- **Source file(s):** _TBD after codebook review_
-- **Variables (exact names):** _TBD_
-- **Notes:** Include units (inches vs cm; pounds vs kg), measured vs reported, and assessment year.
+- Source files: `TBD`
+- Variables: `TBD`
+- Notes: units, measured vs reported flags, interview year.
 
 ### Puberty / menarche
-- **Source file(s):** _TBD after codebook review_
-- **Variables (exact names):** _TBD_
-- **Notes:** Question wording, universe, age coverage.
+- Source files: `TBD`
+- Variables: `TBD`
+- Notes: question wording, universe, age coverage, imputation flags.
 
-### Test scores
-- **Source file(s):** _TBD after codebook review_
-- **Variables (exact names):** _TBD_
-- **Notes:** PIAT Math, Reading Recognition, Reading Comprehension; PPVT; assessment ages.
+### Child assessments
+- Source files: `TBD`
+- Variables: `TBD`
+- Notes: PIAT math, reading recognition, reading comprehension, PPVT, assessment ages.
 
-### Schooling outcomes
-- **Source file(s):** _TBD after codebook review_
-- **Variables (exact names):** _TBD_
-- **Notes:** Highest grade completed, HS completion, enrollment status in YA.
+### YA schooling outcomes
+- Source files: `TBD`
+- Variables: `TBD`
+- Notes: highest grade completed, HS completion, enrollment.
 
-### Health outcomes
-- **Source file(s):** _TBD after codebook review_
-- **Variables (exact names):** _TBD_
-- **Notes:** BMI, self-rated health, etc. if available.
+### YA health outcomes
+- Source files: `TBD`
+- Variables: `TBD`
+- Notes: BMI and self-rated health if available.
 
 ## Mother (NLSY79) Files
 
 ### Maternal education
-- **Source file:** _TBD after codebook review_
-- **Variables (exact names):** _TBD_
+- Source file: `TBD`
+- Variables: `TBD`
 
-### Family income / income-to-needs / poverty
-- **Source file(s):** _TBD after codebook review_
-- **Variables (exact names):** _TBD_
-- **Notes:** Include deflator or CPI series if needed.
+### Family income / poverty
+- Source files: `TBD`
+- Variables: `TBD`
+- Notes: include deflator/CPI linkage if needed.
 
 ### Maternal AFQT
-- **Source file:** _TBD after codebook review_
-- **Variables (exact names):** _TBD_
-- **Notes:** Confirm scale/standardization.
+- Source file: `TBD`
+- Variables: `TBD`
+- Notes: verify scale and standardization.
 
-## Action Required
-1. Re-attempt access to **NLS Investigator** and the **CNLSY/YA codebooks** when network allows.
-2. Replace all `_TBD_` entries with **exact file and variable names**.
-3. Add citation links/URLs for each set of variables used.
-
-## Alternative Documentation & Replication File Cross-Checks (Pending)
-> **Goal:** Identify “old-fashioned” codebooks and recent replication files to triangulate variables and wave coverage **without treating them as authoritative**. All replication-based details will be flagged as provisional until the NLS Investigator review is complete.
-
-### Attempts in this environment (blocked)
-- `https://www.nlsinfo.org/content/cohorts/nlsy79-children` (CNLSY cohort page): **HTTP 403**.
-- `https://www.nlsinfo.org/` (general NLS site): **HTTP 403**.
-
-### Next steps (once web access is restored)
-1. Locate and download **CNLSY79 Children & Young Adult codebook PDFs** from NLS/NLS Investigator pages.
-2. Identify **1–2 replication packages (3–5 years old)** that use CNLSY:
-   - Prefer **AEA Data and Code** / **openICPSR** repositories, or journal-hosted replication archives.
-   - Extract only **variable lists, code comments, and wave coverage**; do **not** treat as ground truth.
-3. Add a short **“Replication cross-check”** subsection under each domain above noting:
-   - Where replication packages **agree** with codebooks.
-   - Any **inconsistencies** (e.g., variable naming, wave availability).
+## Required Actions
+1. Replace all `TBD` entries with exact values from official NLS codebooks/Investigator.
+2. Record citation URL for each mapped domain.
+3. Keep `docs/variable_crosswalk.csv` synchronized with this document.

@@ -1,0 +1,12 @@
+domain,source_file,variable_name,first_year,last_year,universe,notes
+ids,,,,,,
+weights,,,,,,
+demographics,,,,,,
+anthropometrics,,,,,,
+menarche,,,,,,
+child_assessments,,,,,,
+ya_schooling,,,,,,
+ya_health,,,,,,
+mother_education,,,,,,
+mother_income_poverty,,,,,,
+mother_afqt,,,,,,

@@ -1,59 +1,42 @@
-# CNLSY Growth & Development Module Plan
+# CNLSY Growth and Development Analysis Plan
 
-> **Status:** Draft plan prepared without direct access to NLS Investigator/codebooks due to HTTP 403 from this environment. All year/wave- and variable-specific items marked **TBD** will be finalized after codebook review.
+## Status
+Draft plan. Variable-level mappings remain pending until codebook review is fully completed.
 
-## 1. Survey Components to Use
-- **Children (CNLSY) assessments**: anthropometrics, child assessments (PIAT, PPVT), and youth self-reports (as applicable). **TBD (confirm exact assessment years and file names).**
-- **Young Adult (YA) surveys**: schooling outcomes, health outcomes, and later outcomes not in child assessments. **TBD.**
-- **NLSY79 Mothers**: baseline and time-varying SES (maternal education, family income/poverty, AFQT). **TBD.**
+## Survey Components
+- Children (CNLSY): anthropometrics, child assessments (PIAT, PPVT), youth self-reports as relevant.
+- Young Adult (YA): schooling and health outcomes.
+- NLSY79 mothers: SES controls (education, income/poverty, AFQT).
 
-## 2. Coverage Years / Waves (TBD after codebook review)
-- **Height/Weight modules**: _TBD (list exact years/waves)._
-- **Menarche / puberty questions**: _TBD (list exact years/waves)._
-- **Child assessments (PIAT/PPVT)**: _TBD (list exact years/waves)._
-- **YA outcomes (schooling/health)**: _TBD (list exact years/waves)._
+## Coverage Windows
+- Height/weight modules: `TBD` after variable-level mapping.
+- Menarche/puberty: `TBD`.
+- Child assessments (PIAT/PPVT): `TBD`.
+- YA outcomes (schooling/health): `TBD`.
 
-## 3. Primary Samples & Age Windows (Proposed)
-- **Growth tempo proxies:** ages **12–16** (sex-specific if needed); require ≥2 height measures in this window.
-- **Menarche analyses:** girls with valid menarche age; restrict to plausible age range (e.g., 8–17) and non-imputed values.
-- **Outcome analyses:** use earliest post-development assessment window (test scores during childhood; schooling/health during YA).
+## Primary Samples
+- Growth-tempo proxies: ages 12 to 16 with at least two valid height observations.
+- Menarche analyses: girls with plausible, non-imputed menarche age.
+- Outcome analyses: earliest post-development windows for child and YA outcomes.
 
-## 4. Weights Strategy (TBD after codebook review)
-- Use **child assessment weights** for analyses tied to assessment years.
-- Use **YA weights** for YA outcomes.
-- Use **panel weights** where appropriate for pooled cross-cohort analysis.
+## Weights
+- Use child assessment weights for child assessment analyses.
+- Use YA weights for YA outcomes.
+- Use panel weights where pooled design requires it.
 
-## 5. Key Pitfalls & Mitigations
-- **Recall timing** for menarche: document question wording and universe; flag retrospective vs contemporaneous reporting.
-- **Measurement units**: confirm inches/cm and pounds/kg; standardize units; drop or flag outliers.
-- **Selective assessment participation**: check missingness by SES and age; document attrition.
-- **Age alignment**: compute exact age in months at measurement; avoid pooling across wide age ranges.
+## Known Risks
+- Menarche recall timing and wording differences across rounds.
+- Unit inconsistency (inches/cm, pounds/kg).
+- Selective participation and attrition by SES.
+- Age misalignment if exact month-level age is not used.
 
-## 6. Core Deliverables (Planned)
-- **Datasets**
-  - `outputs/cnlsy_panel_long.dta` (child-age panel)
-  - `outputs/cnlsy_dev_measures.dta` (menarche + tempo proxies)
-  - `outputs/cnlsy_analysis_ready.dta` (merged SES + outcomes)
-- **Figures (PDF)**
-  - `outputs/figs/fig_c1_dev_vs_ses.pdf`
-  - `outputs/figs/fig_c2_outcomes_vs_dev.pdf`
-- **Tables**
-  - `outputs/tables/` regression outputs (CSV/LaTeX)
+## Deliverables
+- `data/derived/cnlsy_panel_long.dta`
+- `data/derived/cnlsy_dev_measures.dta`
+- `data/derived/cnlsy_analysis_ready.dta`
+- `results/figures/fig_c1_dev_vs_ses.pdf`
+- `results/figures/fig_c2_outcomes_vs_dev.pdf`
+- regression tables in `results/tables/`
 
-## 7. Next Step
-- **Complete the codebook/variable review** and update `docs/cnlsy_variable_map.md` with exact file/variable names before writing any Stata pipeline scripts.
-
-## 8. Replication Files as Secondary Validation (Pending)
-> **Purpose:** Use recent CNLSY replication packages to **triangulate** variable coverage and panel structure, while clearly labeling them as **non-authoritative**. All replication-based notes will be verified against NLS Investigator once access is restored.
-
-### Planned sources (once web access is restored)
-- **AEA Data and Code** / **openICPSR** / journal replication archives (target papers from the last 3–5 years).
-- Criteria: uses CNLSY Children/YA data, includes codebooks or Stata do-files, and documents variable construction.
-
-### Cross-check workflow
-1. Extract candidate variable lists (anthropometrics, menarche, test scores, SES, outcomes).
-2. Compare to official NLS Investigator codebooks; log **agreements vs discrepancies**.
-3. Keep a short audit note in the docs indicating which items are **replication-derived** and **awaiting official confirmation**.
-
-### Current status
-- Web access to NLS/NLS Investigator is blocked in this environment (**HTTP 403**), so replication sources are not yet retrieved.
+## Immediate Next Step
+Finalize `docs/cnlsy_variable_map.md` with exact source file and variable names before writing domain transformations.

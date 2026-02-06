@@ -1,0 +1,9 @@
+* text=auto
+
+# Binary analytical outputs
+*.dta binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.zip binary
